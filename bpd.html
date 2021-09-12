@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<title>Book Program Discussion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="customized_w3.css">
+<link rel="icon" href="mylogo.svg">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar custom-color w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><img src='mylogo.svg' width="40" height="40"/><b>Book Program Discussion</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#search" class="w3-bar-item w3-button">Search</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#news" class="w3-bar-item w3-button">News/Events</a>
+      <a href="#memberlogin" class="w3-bar-item w3-button">LOGIN</a>
+      <button class="w3-bar-item w3-button w3-border" id="trigger-modal" 
+      onclick="document.getElementById('bookclubrego').style.display='block'">JOIN US!</button>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="shutterstock_1529567276.png" alt="BPD" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding custom-color w3-opacity-min"><img src='mylogo.svg' width="60" height="60"/><b style="opacity: 1;">Book Program Discussion</b></span> <span class="w3-hide-small w3-text-white"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p style='font-size: 17px;'>Welcome! We are a non-profit organization, built by warm hearts of New Zealand book-lovers and professionals. 
+        In here, you can find thousands of books and professional discussion notes for your book group.
+    </p>
+  </div>
+
+  <div class="w3-container w3-padding-32" id="archives">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">New Archives</h3>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="bkexmpl1.jpg" alt="image" style="width:60%">
+      <h3>The Lord of The Rings</h3>
+      <p class="w3-opacity">J.R.R. Tolkien</p>
+      <p>One ring to rule them all.</p>
+      <p><button class="w3-button custom-color w3-block" style='background-color: #1d1e33; color: white;'>Discover</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="bkexmpl2.jpeg" alt="image" style="width:61.4%">
+      <h3>Confessions of a Mask</h3>
+      <p class="w3-opacity">Yukio Mishima</p>
+      <p>Japanese hope of 1950s.</p>
+      <p><button class="w3-button w3-block" style='background-color: #1d1e33; color: white;'>Discover</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>123 Blabla Rd, Blabla Place</p>
+    <p>Auckland, New Zealand</p>
+    <p>Ph: 000-0000000</p>
+    <p>E-mail: blablabla@blabla.com</p>
+    <br>
+    <p>Or leave your message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button custom-color w3-section" type="submit">
+        <i class="fa fa-paper-plane" style='background-color: #1d1e33; color: white;'></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center custom-color w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Customized W3.css</a></p>
+</footer>
+
+
+
+
+
+<div id="bookclubrego" class='w3-modal'>
+  <div class='w3-modal-content'>
+    <div class='w3-container'>
+      <span onclick="document.getElementById('bookclubrego').style.display='none'"
+      class="w3-nutton w3-display-topright" style='cursor: pointer; font-size:40px; margin-right:20px; color: #1d1e33'>&times;</span>
+    
+    <div class="w3-container w3-padding-16" id="register-form">
+        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">REGISTER</h2>
+        <form action="/action_page.php" target="_blank">
+          <p>Please enter following details:</p>
+          <input class="w3-input w3-border" type="text" placeholder="Given Name" required name="Given Name">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Surname" required name="Surname">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Username" required name="Username">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Password" required name="Password">
+          <p>Address:</p>
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Home Address" required name="Home Address">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Work Address" required name="Work Address">
+          <p>Contacts:</p>
+          <input class="w3-input w3-section w3-border" type="text" placeholder="Mobile Number" required name="Mobile Number">
+          <input class="w3-input w3-section w3-border" type="text" placeholder="E-mail" required name="E-mail">
+          <button class="w3-button custom-color w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> JOIN!
+          </button>
+        </form>
+      </div>
+      <span onclick="document.getElementById('bookclubrego').style.display='none'"
+      class="w3-nutton w3-display-bottomright" style='cursor: pointer; font-size:18px; margin-right:40px; margin-bottom: 20px;
+      padding: 5px; padding-top: 5px; padding-bottom: 5px;
+      background-color: lightgrey; color: #1d1e33'>Close</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
